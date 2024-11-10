@@ -16,7 +16,12 @@ mongoose.connection.on('error', () => {
 throw new Error(`unable to connect to database: ${config.mongoUri}`) 
 })
 app.get("/", (req, res) => {
-res.json({ message: "Welcome to User application." });
+    res.json(
+        { 
+            message: "Welcome to User application (server.js)", 
+            note: "If you see this message, you may need to build your client to 'dist' folder by running command 'cd client', 'yarn build'" 
+        }
+    );
 });
 app.listen(config.port, (err) => { 
 if (err) {
