@@ -6,12 +6,33 @@ Features
 - Manage Shops for Seller
 - Manage Products in the Shop
 
+**Configuration**
 
-How to start the project locally:
+MongoDb connection string is defined in `config/config.js`
 
-`cd client`
+`mongoUri` property
 
-`npm run dev`
+
+**Building project**
+
+Build server code
+```
+yarn
+```
+
+Build client code
+
+```
+cd client
+yarn
+```
+
+**How to start the project locally**
+
+```
+cd client
+npm run dev
+```
 
 in the console you will see URLs for frontend (e.g. Local:   http://localhost:5173/)
 
@@ -19,8 +40,11 @@ and also the 'Server started on port 3000', which means the url of the server: h
 
 To build the client and make it run on server url:
 
-`cd client`
-
-`yarn build`
+```
+cd client
+yarn build
+cd ..
+node server.js
+```
 
 Then you can open your webapp frontend on the server url: http://localhost:3000
