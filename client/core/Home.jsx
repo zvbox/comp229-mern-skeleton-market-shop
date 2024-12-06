@@ -32,7 +32,7 @@ export default function Home() {
         image={ecommerce} title="Unicorn Bicycle" />
       <CardContent>
         <Typography variant="body2" component="p">
-          Welcome to the MERN Skeleton home page.
+          Welcome to the MERN Skeleton home page. Sample code of COMP229 course.
         </Typography>
       </CardContent>
     </Card>
